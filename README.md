@@ -7,8 +7,7 @@ Location camera's zones
 
 This repo contains:
 
-1. Definition of location camera's **zones info** see
-   [videoparking-zones/data/v1](videoparking_zones/data/v1)
+1. Definition of location camera's **zones info** see [v1](v1).
 
 
 ### Adding/updating zones info for a camera
