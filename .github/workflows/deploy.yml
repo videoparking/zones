@@ -11,6 +11,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Deploy
+    - name: Deploy zones-splitter
       run: |
-        echo TBD with key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} ...
+        curl -X POST -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/videoparking/zones-splitter/actions/workflows/deploy.yml/dispatches -d '{"ref":"main"}' -u ${{ secrets.ZONES_SPLITTER_WORKFLOW_AUTH }}
+
